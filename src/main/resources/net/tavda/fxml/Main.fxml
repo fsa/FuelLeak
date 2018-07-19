@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="223.0" prefWidth="290.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8.0.121"
+      xmlns:fx="http://www.w3.org/2001/XMLSchema">
+    <MenuBar>
+        <Menu mnemonicParsing="false" text="File">
+            <MenuItem mnemonicParsing="false" text="Close"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+            <MenuItem mnemonicParsing="false" text="Delete"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+            <MenuItem mnemonicParsing="false" text="About"/>
+        </Menu>
+    </MenuBar>
+    <TabPane minHeight="0.0" minWidth="0.0" tabClosingPolicy="UNAVAILABLE">
+        <Tab text="Расчёт взрыва ТВС">
+            <fx:include fx:id="Torch" source="AirFuelBlast.fxml"/>
+        </Tab>
+        <Tab text="Расчёт зоны поражения">
+            <fx:include fx:id="TorchDamaging" source="TorchDamaging.fxml"/>
+        </Tab>
+    </TabPane>
+</VBox>
